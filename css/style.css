@@ -1,0 +1,92 @@
+
+
+@font-face {
+  font-family: "Roboto"; 
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+  } 
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+  
+  .visually-hidden {
+    position: fixed;
+    transform: scale(0);
+  }
+  
+body{
+font-family: "Roboto", sans-serif;
+overflow-x: hidden;
+}
+
+.dropdown{
+  background-color: rgba(196, 196, 196, 1);
+  height: 763px;
+  width: 661px ;
+}
+
+.dropdown input {
+  border: none;
+  font-size: 48px;
+  line-height: 56px;
+  width: 500px;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  margin-left: 77px;
+  margin-top: 62px;
+  padding-left: 13px;
+}
+
+.menu{
+  width: 500px;
+  margin-left: 77px;
+  display: flex;
+  flex-direction: column;
+}
+.menu__item{
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 35px;
+  border: 2px solid #000;
+  background-color: rgba(227, 227, 227, 1);
+}
+
+.menu__item:hover {
+  background-color: rgba(101, 205, 249, 1);
+  cursor: pointer;
+}
+.repositories{
+  margin-top: 45px;
+  margin-left: 74px;
+  
+}
+.repository__item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  padding:8px 16px;
+  width:503px;
+  font-size: 24px;
+  line-height: 28px;
+  background-color: rgba(226, 123, 235, 1);
+  border: 1px solid #000;
+  min-height: 101px;
+
+}
+
+.closebutton{
+    background: url(../img/Close.svg) center no-repeat;
+    width: 42px;
+    height: 38.5px;
+    cursor: pointer;
+    border:none;
+    margin-right: 18px;
+}
